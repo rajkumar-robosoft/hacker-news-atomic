@@ -1,11 +1,12 @@
 import axios from 'axios';
+import Type from './constants'
 
 axios.defaults.baseURL = 'https://hacker-news.firebaseio.com/v0/';
 
 export const API = {
     top: () => {
         return new Promise((resolve, reject) => {
-            axios.get('/topstories.json')
+            axios.get(Type.top)
             .then(
                 res => {
                     resolve(res.data)
@@ -17,7 +18,7 @@ export const API = {
     },
     new: () => {
         return new Promise((resolve, reject) => {
-            axios.get('/newstories.json')
+            axios.get(Type.new)
             .then(
                 res => {
                     resolve(res.data)
@@ -29,7 +30,7 @@ export const API = {
     },
     best: () => {
         return new Promise((resolve, reject) => {
-            axios.get('/beststories.json')
+            axios.get(Type.best)
             .then(
                 res => {
                     resolve(res.data)
@@ -41,7 +42,7 @@ export const API = {
     },
     ask: () => {
         return new Promise((resolve, reject) => {
-            axios.get('/askstories.json')
+            axios.get(Type.ask)
             .then(
                 res => {
                     resolve(res.data)
@@ -53,7 +54,7 @@ export const API = {
     },
     job: () => {
         return new Promise((resolve, reject) => {
-            axios.get('/jobstories.json')
+            axios.get(Type.job)
             .then(
                 res => {
                     resolve(res.data)
@@ -65,7 +66,7 @@ export const API = {
     },
     show: () => {
         return new Promise((resolve, reject) => {
-            axios.get('/showstories.json')
+            axios.get(Type.show)
             .then(
                 res => {
                     resolve(res.data)
