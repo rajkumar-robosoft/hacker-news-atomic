@@ -5,9 +5,10 @@ import QueryString from "query-string";
 import Item from "../../molecules/item";
 import CustomLink from "../../molecules/custom-link";
 import Button from "../../atoms/button";
+import Loader from "../../atoms/loader";
 import "./style.css";
 
-const ListItem = ({ data }) => {
+const ListItem = ({ data, isLoading }) => {
   const [offset, setOffset] = useState(0);
   const [perPage] = useState(15);
   const [dataPerPage, setDataPerPage] = useState([]);
@@ -63,7 +64,9 @@ const ListItem = ({ data }) => {
   return (
     <>
      { data && (
-        <div className="listing-area">
+       <>
+      <div style={{display: isLoading ? 'block' : 'none'}}><Loader /> </div>
+       <div className="listing-area" style={{display : isLoading ? 'none' : 'block'}}>
           {dataPerPage.map((data, index) => {
             return <Item id={data} number={offset + index + 1} key={index} />;
           })}
@@ -79,7 +82,10 @@ const ListItem = ({ data }) => {
             </div>
           )}
         </div>
-      )}
+        </>
+     ) 
+        
+      }
     </>
   );
 };

@@ -6,7 +6,7 @@ import classNames from "classnames";
 import "./style.css";
 import Typography from "../../atoms/typography";
 
-const Item = ({ id, number, className, ...props }) => {
+const Item = ({ id, number, className, isLoading, ...props }) => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
@@ -15,6 +15,7 @@ const Item = ({ id, number, className, ...props }) => {
       setItem(response);
     }
     getData();
+    
   }, [id]);
 
   if (!item) return "No Item Found!";
