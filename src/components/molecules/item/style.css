@@ -1,0 +1,37 @@
+.item-container {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .item ul {
+    list-style: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .item ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  .item ul li:nth-child(2) {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid grey;
+    position: relative;
+    top: -10px;
+    right: 5px;
+  }
+  .serial-no {
+    margin-right: -30px;
+    margin-top: 8px;
+    
+  }
+  

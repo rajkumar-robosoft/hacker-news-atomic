@@ -1,0 +1,43 @@
+
+.headingOne {
+  font-size: 3.2rem;
+  line-height: 1.25;
+}
+
+.headingTwo {
+  font-size: 2.8rem;
+  line-height: 2.25;
+}
+
+.headingThree {
+  font-size: 2.4rem;
+
+  line-height: 1.3em;
+}
+
+.headingFour {
+  font-size: 1.6rem;
+
+  line-height: 1.5;
+}
+
+.headingFive {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.headingSix {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.largeTag {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.125;
+}
+
+.smallTag {
+  font-size: 1rem;
+  line-height: 0.875;
+}

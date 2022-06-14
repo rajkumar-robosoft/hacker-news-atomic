@@ -1,0 +1,22 @@
+:root {
+  --brand-primary: #ff6600;
+  --brand-highlight: #df5c05;
+  --brand-light: #262931;
+  --brand-medium: #1a1c21;
+  --brand-dark: #121317;
+  --neutral-1: #000000;
+  --neutral-2: #282d33;
+  --neutral-3: #383e47;
+  --neutral-4: #545a62;
+  --neutral-5: #6c727a;
+  --neutral-6: #838991;
+  --neutral-7: #9ba1a9;
+  --neutral-8: #bfc5cd;
+  --neutral-9: #d6dce4;
+  --neutral-10: #ffffff;
+  --tertiary-success: #78c54a;
+  --tertiary-warning: #ffa424;
+  --tertiary-alert-dim: #d9203c;
+  --tertiary-alert-bright: #ff405d;
+  --moderate-gray: #757575;
+}
